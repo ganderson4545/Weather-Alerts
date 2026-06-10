@@ -22,7 +22,7 @@ jobs:
 
           STATE      = "NE"          # ← change to your 2-letter state code
           COUNTY     = "Saunders"    # ← change to your county name (no "County" suffix)
-          MIN_SEV    = "Moderate"    # ← Minor | Moderate | Severe | Extreme
+          MIN_SEV    = "Minor"    # ← Minor | Moderate | Severe | Extreme
           SEEN_FILE  = "/tmp/seen_alert_ids.txt"
 
           WEBHOOK    = os.environ.get("SLACK_WEBHOOK", "")
