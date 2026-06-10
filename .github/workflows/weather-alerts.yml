@@ -2,8 +2,10 @@ name: Weather Alert Monitor
 
 on:
   schedule:
-    - cron: '* * * * *'   # runs every 5 minutes
-  workflow_dispatch:          # lets you trigger it manually from GitHub
+    - cron: '*/2 * * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   check-alerts:
